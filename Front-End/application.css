@@ -1,0 +1,91 @@
+.root {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Verdana";
+}
+.main{
+	-fx-background-color: "#262626";
+}
+.panel{
+	-fx-background-color: "#333333";
+	-fx-border-color: yellow transparent transparent transparent; 
+	-fx-border-width: 2 0 0 0;
+}
+.search{
+	-fx-text-fill: #333333; 
+}
+.combo-box-base {
+    -fx-background-color: "#f7ef00";
+}
+.module{
+	-fx-background-color: "#262626";
+	-fx-background-radius: 7px;
+}
+
+#bottommodule{
+	-fx-border-color: "#f7ef00" transparent transparent transparent; 
+	-fx-border-width: 2 0 0 0;
+	-fx-background-radius: 7px;
+	-fx-border-radius: 7px;
+}
+.cbutton{
+	-fx-background-radius: 3px;
+	-fx-border-radius: 3px;
+	-fx-border-color: yellow; 
+	-fx-border-width: 1;
+	-fx-background-color: "#333333";
+}
+.dailypercen{
+	-fx-background-color: "#333333";
+	-fx-background-radius: 7px;
+}
+.cbutton:pressed{
+	-fx-background-color: "#f7ef00";
+}
+.upbutton{
+	-fx-background-radius: 1000px;
+	-fx-border-radius: 1000px;
+	-fx-border-color: yellow; 
+	-fx-border-width: 1;
+	-fx-background-color: "#333333";
+}
+.upbutton:pressed{
+	-fx-background-color: "#f7ef00";
+}
+.progress-indicator {
+    -fx-progress-color: "#f7ef00"; /* Progress bar color */  
+    -fx-body-color: black;
+    -fx-background-color: transparent;
+}
+.progress-indicator .indicator {
+    -fx-background-color: transparent; /* Make sure the background stays transparent */
+}
+.progress-indicator .percentage {
+    -fx-fill: transparent ;
+}
+.switchbutton{
+	-fx-background-radius: 3px;
+	-fx-border-radius: 3px;
+	-fx-background-color: "#f7ef00";
+}
+.userpaymodule{
+	-fx-background-color: "#f7ef00";
+	-fx-background-radius: 7px;
+}
+.blur{
+	-fx-background-color: rgba(51,51,51, 0.9); /* Semi-transparent white */
+}
+.login{
+	-fx-background-color: "#f7ef00";
+	-fx-background-radius: 7px;
+}
+.cticket {
+    -fx-control-inner-background: "#333333";
+	-fx-border-color: "#f7ef00";
+}
+.pay{
+	-fx-background-color:"#262626";
+}
+.amountbar{
+	-fx-background-color:"#262626";
+	-fx-background-radius: 5px;	
+}

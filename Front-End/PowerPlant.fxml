@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="669.0" prefWidth="1200.0" styleClass="main" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PowerControl">
+   <children>
+      <Text fill="#f7ef00" strokeType="OUTSIDE" strokeWidth="0.0" text="City Electricity Management" wrappingWidth="582.6943359375" StackPane.alignment="TOP_LEFT">
+         <font>
+            <Font name="Consolas Bold" size="38.0" />
+         </font>
+         <StackPane.margin>
+            <Insets left="35.0" top="25.0" />
+         </StackPane.margin>
+      </Text>
+      <StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="524.0" prefWidth="1127.0" styleClass="panel" stylesheets="@application.css" StackPane.alignment="BOTTOM_CENTER">
+         <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="510.0" styleClass="module" stylesheets="@application.css" StackPane.alignment="TOP_LEFT">
+               <StackPane.margin>
+                  <Insets left="40.0" top="40.0" />
+               </StackPane.margin>
+               <children>
+                  <Label fx:id="myLabel1" layoutX="21.0" layoutY="-1.0" prefHeight="42.0" prefWidth="359.0" text="Basic Information" textFill="#f7ef00">
+                     <font>
+                        <Font name="Consolas Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Line endX="409.4000244140625" endY="7.62939453125E-6" layoutX="101.0" layoutY="42.0" startX="-100.0" stroke="#f7ef00" />
+                  <Label fx:id="basiclab1" layoutX="14.0" layoutY="51.0" prefHeight="42.0" prefWidth="218.0" text="Label 1" textFill="#f7ef00">
+                     <font>
+                        <Font name="Consolas Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="basiclab2" layoutX="14.0" layoutY="82.0" prefHeight="42.0" prefWidth="218.0" text="Label 2" textFill="#f7ef00">
+                     <font>
+                        <Font name="Consolas Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="basiclab3" layoutX="14.0" layoutY="115.0" prefHeight="42.0" prefWidth="218.0" text="Label 3" textFill="#f7ef00">
+                     <font>
+                        <Font name="Consolas Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="basiclab4" layoutX="14.0" layoutY="145.0" prefHeight="42.0" prefWidth="218.0" text="Label 4" textFill="#f7ef00">
+                     <font>
+                        <Font name="Consolas Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="basiclab5" layoutX="14.0" layoutY="178.0" prefHeight="42.0" prefWidth="218.0" text="Label 5" textFill="#f7ef00">
+                     <font>
+                        <Font name="Consolas Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="basicval1" layoutX="256.0" layoutY="51.0" prefHeight="42.0" prefWidth="218.0" text=":Value 1" textFill="#f7ef00">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="basicval2" layoutX="256.0" layoutY="82.0" prefHeight="42.0" prefWidth="218.0" text=":Value 2" textFill="#f7ef00">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="basicval3" layoutX="256.0" layoutY="115.0" prefHeight="42.0" prefWidth="218.0" text=":Value 3" textFill="#f7ef00">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="basicval4" layoutX="256.0" layoutY="145.0" prefHeight="42.0" prefWidth="218.0" text=":Value 4" textFill="#f7ef00">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="basicval5" layoutX="256.0" layoutY="178.0" prefHeight="42.0" prefWidth="218.0" text=":Value 5" textFill="#f7ef00">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="510.0" styleClass="module" stylesheets="@application.css" StackPane.alignment="TOP_RIGHT">
+               <StackPane.margin>
+                  <Insets right="40.0" top="40.0" />
+               </StackPane.margin>
+               <children>
+                  <Label fx:id="myLabel11" layoutX="27.0" layoutY="-1.0" prefHeight="42.0" prefWidth="467.0" text="Manage Daily Supply/Production" textFill="#f7ef00">
+                     <font>
+                        <Font name="Consolas Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Line endX="409.4000244140625" endY="7.62939453125E-6" layoutX="101.0" layoutY="42.0" startX="-100.0" stroke="#f7ef00" />
+                  <Button fx:id="decbutton" layoutX="244.0" layoutY="133.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="75.0" styleClass="cbutton" stylesheets="@application.css" text="Dec." textFill="#f7ef00" />
+                  <Button fx:id="incbutton" layoutX="244.0" layoutY="81.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="75.0" styleClass="cbutton" stylesheets="@application.css" text="Inc." textFill="#f7ef00" />
+                  <Pane layoutX="350.0" layoutY="123.0" prefHeight="44.0" prefWidth="99.0" styleClass="dailypercen">
+                     <children>
+                        <Label fx:id="dailyp" layoutX="22.0" layoutY="1.0" prefHeight="42.0" prefWidth="53.0" text="00%" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label fx:id="myLabel111" layoutX="356.0" layoutY="69.0" prefHeight="42.0" prefWidth="86.0" text="Current" textFill="#f7ef00" underline="true">
+                     <font>
+                        <Font name="Consolas Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <ProgressIndicator fx:id="progc" accessibleRole="PASSWORD_FIELD" layoutX="35.0" layoutY="59.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="170.0" progress="0.17" />
+                  <Circle fill="#333333" layoutX="120.0" layoutY="133.0" radius="60.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <ImageView fitHeight="82.0" fitWidth="69.0" layoutX="86.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@thun.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane id="bottommodule" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="224.0" prefWidth="1050.0" styleClass="module" stylesheets="@application.css" StackPane.alignment="BOTTOM_CENTER">
+               <children>
+                  <Label fx:id="myLabel12" layoutX="484.0" layoutY="1.0" prefHeight="42.0" prefWidth="258.0" text="Control Outgoing Supply" textFill="#f7ef00">
+                     <font>
+                        <Font name="Consolas Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Line endX="377.79998779296875" endY="1.9073486328125E-5" layoutX="387.0" layoutY="43.0" startX="73.80001831054688" startY="1.9073486328125E-5" stroke="#f7ef00" />
+                  <Line endX="63.300018310546875" endY="-9.499980926513672" layoutX="397.0" layoutY="53.0" startX="35.000030517578125" startY="-51.99998092651367" stroke="#f7ef00" />
+                  <Line endX="63.300018310546875" endY="-9.499980926513672" layoutX="703.0" layoutY="52.0" startX="92.60003662109375" startY="-50.99998092651367" stroke="#f7ef00" />
+                  <Line endX="63.300018310546875" endY="-9.499980926513672" layoutX="696.0" layoutY="52.0" startX="92.60003662109375" startY="-50.99998092651367" stroke="#f7ef00" />
+                  <Line endX="63.300018310546875" endY="-9.499980926513672" layoutX="403.0" layoutY="52.0" startX="35.000030517578125" startY="-51.99998092651367" stroke="#f7ef00" />
+                  <Label fx:id="myLabel1111" layoutX="63.0" layoutY="8.0" prefHeight="42.0" prefWidth="99.0" text="Outgoing" textFill="#f7ef00" underline="true">
+                     <font>
+                        <Font name="Consolas Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Pane fx:id="dailypercen1" layoutX="61.0" layoutY="62.0" prefHeight="44.0" prefWidth="99.0" styleClass="dailypercen" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="outgoingp" layoutX="22.0" layoutY="1.0" prefHeight="42.0" prefWidth="53.0" text="00%" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Button fx:id="start" layoutX="49.0" layoutY="123.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="120.0" styleClass="cbutton" stylesheets="@application.css" text="Start" textFill="#f7ef00" />
+                  <Button fx:id="stop" layoutX="49.0" layoutY="172.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="120.0" styleClass="cbutton" stylesheets="@application.css" text="Stop" textFill="#f7ef00" />
+                  <Line endX="-95.79995727539062" endY="99.0" layoutX="316.0" layoutY="125.0" startX="-95.79995727539062" startY="-124.99996948242188" stroke="#f7ef00" strokeWidth="2.0" />
+                  <Line endX="-95.79995727539062" endY="99.0" layoutX="1112.0" layoutY="125.0" startX="-95.79995727539062" startY="-124.99996948242188" stroke="#f7ef00" strokeWidth="2.0" />
+                  <Line endX="688.199951171875" endY="-79.39993286132812" layoutX="327.0" layoutY="129.0" startX="-106.79995727539062" startY="-79.39993286132812" stroke="#f7ef00" />
+                  <ImageView fitHeight="111.0" fitWidth="111.0" layoutX="267.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="111.0" fitWidth="111.0" layoutX="452.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="111.0" fitWidth="111.0" layoutX="634.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="outlab1" layoutX="256.0" layoutY="62.0" prefHeight="38.0" prefWidth="37.0" text="SS1" textFill="#f7ef00">
+                     <font>
+                        <Font name="Consolas Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="outlab2" layoutX="437.0" layoutY="65.0" prefHeight="38.0" prefWidth="37.0" text="SS2" textFill="#f7ef00">
+                     <font>
+                        <Font name="Consolas Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="outlab3" layoutX="623.0" layoutY="63.0" prefHeight="38.0" prefWidth="37.0" text="SS3" textFill="#f7ef00">
+                     <font>
+                        <Font name="Consolas Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Pane fx:id="dailypercen11" layoutX="273.0" layoutY="172.0" prefHeight="27.0" prefWidth="99.0" styleClass="dailypercen" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="outval1" layoutX="36.0" layoutY="-7.0" prefHeight="42.0" prefWidth="53.0" text="00%" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="dailypercen111" layoutX="458.0" layoutY="172.0" prefHeight="27.0" prefWidth="99.0" styleClass="dailypercen" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="outval2" layoutX="36.0" layoutY="-7.0" prefHeight="42.0" prefWidth="53.0" text="00%" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="640.0" layoutY="172.0" prefHeight="27.0" prefWidth="99.0" styleClass="dailypercen" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="outval3" layoutX="36.0" layoutY="-8.0" prefHeight="42.0" prefWidth="53.0" text="00%" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Button fx:id="upbut1" layoutX="241.0" layoutY="171.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="upbutton" stylesheets="@application.css" text="&lt;" textFill="#f7ef00">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="upbut2" layoutX="426.0" layoutY="171.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="upbutton" stylesheets="@application.css" text="&lt;" textFill="#f7ef00">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="upbut3" layoutX="608.0" layoutY="171.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="upbutton" stylesheets="@application.css" text="&lt;" textFill="#f7ef00">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="downbut1" layoutX="374.0" layoutY="171.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="upbutton" stylesheets="@application.css" text="&gt;" textFill="#f7ef00">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="downbut2" layoutX="557.0" layoutY="171.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="upbutton" stylesheets="@application.css" text="&gt;" textFill="#f7ef00">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="downbut3" layoutX="739.0" layoutY="171.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="upbutton" stylesheets="@application.css" text="&gt;" textFill="#f7ef00">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Button>
+                  <Line endX="103.2000732421875" endY="1.220703125E-4" layoutX="904.0" layoutY="123.0" startX="-159.00006103515625" startY="1.8310546875E-4" stroke="#f7ef00" strokeLineJoin="BEVEL" strokeType="OUTSIDE" />
+                  <Line endX="106.0" endY="2.44140625E-4" layoutX="528.0" layoutY="124.0" startX="32.0" startY="1.8310546875E-4" stroke="#f7ef00" strokeLineJoin="BEVEL" strokeType="OUTSIDE" />
+                  <Line endX="106.0" endY="2.44140625E-4" layoutX="347.0" layoutY="124.0" startX="31.000030517578125" startY="3.0517578125E-4" stroke="#f7ef00" strokeLineJoin="BEVEL" strokeType="OUTSIDE" />
+                  <Line endX="106.0" endY="2.44140625E-4" layoutX="158.0" layoutY="125.0" startX="61.200042724609375" startY="3.0517578125E-4" stroke="#f7ef00" strokeLineJoin="BEVEL" strokeType="OUTSIDE" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+      <Label fx:id="subtitle" prefHeight="42.0" prefWidth="359.0" text="Manage Power Plant" textFill="#f7ef00" StackPane.alignment="TOP_LEFT">
+         <font>
+            <Font name="Consolas Bold Italic" size="35.0" />
+         </font>
+         <StackPane.margin>
+            <Insets left="35.0" top="100.0" />
+         </StackPane.margin>
+      </Label>
+      <ComboBox fx:id="box" prefHeight="41.0" prefWidth="406.0" promptText="Search..." styleClass="search" stylesheets="@application.css" StackPane.alignment="TOP_RIGHT">
+         <StackPane.margin>
+            <Insets right="80.0" top="105.0" />
+         </StackPane.margin>
+      </ComboBox>
+      <StackPane fx:id="userpanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="1200.0" styleClass="module" stylesheets="@application.css" visible="false" StackPane.alignment="BOTTOM_CENTER">
+         <children>
+            <StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="524.0" prefWidth="1127.0" styleClass="panel" stylesheets="@application.css" StackPane.alignment="BOTTOM_CENTER">
+               <children>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="510.0" styleClass="module" stylesheets="@application.css" StackPane.alignment="TOP_LEFT">
+                     <StackPane.margin>
+                        <Insets left="40.0" top="40.0" />
+                     </StackPane.margin>
+                     <children>
+                        <Label fx:id="myLabel11" layoutX="21.0" layoutY="-1.0" prefHeight="42.0" prefWidth="359.0" text="Basic Information" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Line endX="409.4000244140625" endY="7.62939453125E-6" layoutX="101.0" layoutY="42.0" startX="-100.0" stroke="#f7ef00" />
+                        <Label fx:id="ubasiclab1" layoutX="14.0" layoutY="51.0" prefHeight="42.0" prefWidth="218.0" text="Label 1" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ubasiclab2" layoutX="14.0" layoutY="82.0" prefHeight="42.0" prefWidth="218.0" text="Label 2" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ubasiclab3" layoutX="14.0" layoutY="115.0" prefHeight="42.0" prefWidth="218.0" text="Label 3" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ubasiclab4" layoutX="14.0" layoutY="145.0" prefHeight="42.0" prefWidth="218.0" text="Label 4" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ubasiclab5" layoutX="14.0" layoutY="178.0" prefHeight="42.0" prefWidth="218.0" text="Label 5" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ubasicval1" layoutX="256.0" layoutY="51.0" prefHeight="42.0" prefWidth="218.0" text=":Value 1" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ubasicval2" layoutX="256.0" layoutY="82.0" prefHeight="42.0" prefWidth="218.0" text=":Value 2" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ubasicval3" layoutX="256.0" layoutY="115.0" prefHeight="42.0" prefWidth="218.0" text=":Value 3" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ubasicval4" layoutX="256.0" layoutY="145.0" prefHeight="42.0" prefWidth="218.0" text=":Value 4" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ubasicval5" layoutX="256.0" layoutY="178.0" prefHeight="42.0" prefWidth="218.0" text=":Value 5" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane id="bottommodule" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="224.0" prefWidth="735.0" styleClass="module" stylesheets="@application.css" StackPane.alignment="BOTTOM_LEFT">
+                     <children>
+                        <Label fx:id="myLabel121" layoutX="305.0" layoutY="1.0" prefHeight="42.0" prefWidth="186.0" text="Complaint Ticket" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Line endX="328.5928955078125" endY="0.207122802734375" layoutX="172.0" layoutY="43.0" startX="115.00714111328125" startY="1.207122802734375" stroke="#f7ef00" />
+                        <Line endX="63.300018310546875" endY="-9.499980926513672" layoutX="223.0" layoutY="53.0" startX="35.000030517578125" startY="-51.99998092651367" stroke="#f7ef00" />
+                        <Line endX="63.300018310546875" endY="-9.499980926513672" layoutX="438.0" layoutY="52.0" startX="92.60003662109375" startY="-50.99998092651367" stroke="#f7ef00" />
+                        <Line endX="63.300018310546875" endY="-9.499980926513672" layoutX="431.0" layoutY="52.0" startX="92.60003662109375" startY="-50.99998092651367" stroke="#f7ef00" />
+                        <Line endX="63.300018310546875" endY="-9.499980926513672" layoutX="229.0" layoutY="52.0" startX="35.000030517578125" startY="-51.99998092651367" stroke="#f7ef00" />
+                        <Label fx:id="ubasiclab11" layoutX="23.0" layoutY="43.0" prefHeight="42.0" prefWidth="218.0" text="Enter grievance:" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="grievancebox" layoutX="23.0" layoutY="90.0" prefHeight="120.0" prefWidth="519.0" styleClass="cticket" stylesheets="@application.css" />
+                        <Button fx:id="ticketsubmit" layoutX="565.0" layoutY="167.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="147.0" styleClass="switchbutton" stylesheets="@application.css" text="Submit">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="111.0" fitWidth="111.0" layoutX="583.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <StackPane.margin>
+                        <Insets left="40.0" />
+                     </StackPane.margin>
+                  </Pane>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="510.0" styleClass="module" stylesheets="@application.css" StackPane.alignment="TOP_RIGHT">
+                     <StackPane.margin>
+                        <Insets right="40.0" top="40.0" />
+                     </StackPane.margin>
+                     <children>
+                        <Label fx:id="myLabel111" layoutX="27.0" layoutY="-1.0" prefHeight="42.0" prefWidth="467.0" text="Meter Consumption Info." textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Line endX="409.4000244140625" endY="7.62939453125E-6" layoutX="101.0" layoutY="42.0" startX="-100.0" stroke="#f7ef00" />
+                        <Label fx:id="umcmonth1" layoutX="14.0" layoutY="43.0" prefHeight="42.0" prefWidth="218.0" text="Month, Year" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="umcmonth2" layoutX="39.0" layoutY="108.0" prefHeight="42.0" prefWidth="218.0" text="Label 2" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold Italic" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="umcmonth3" layoutX="39.0" layoutY="141.0" prefHeight="42.0" prefWidth="218.0" text="Label 3" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold Italic" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="umcmonth4" layoutX="39.0" layoutY="174.0" prefHeight="42.0" prefWidth="218.0" text="Label 4" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold Italic" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="umcval1" layoutX="261.0" layoutY="43.0" prefHeight="42.0" prefWidth="218.0" text=":Consumption" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="umcval2" layoutX="257.0" layoutY="108.0" prefHeight="42.0" prefWidth="218.0" text=":Value 2" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold Italic" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="umcval3" layoutX="257.0" layoutY="141.0" prefHeight="42.0" prefWidth="218.0" text=":Value 3" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold Italic" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="umcval4" layoutX="257.0" layoutY="174.0" prefHeight="42.0" prefWidth="218.0" text=":Value 4" textFill="#f7ef00">
+                           <font>
+                              <Font name="Consolas Bold Italic" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="umcilab11" layoutX="14.0" layoutY="73.0" prefHeight="42.0" prefWidth="297.0" text="Previous Month Consumption" textFill="#f7ef00" underline="true">
+                           <font>
+                              <Font name="Consolas Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Line endX="-17.000019073486328" endY="86.0" layoutX="41.0" layoutY="118.0" startX="-17.000019073486328" startY="-14.666641235351562" stroke="#f7ef00" strokeWidth="2.0" />
+                        <Line endX="-1.9073486328125E-5" endY="-1.52587890625E-5" layoutX="37.0" layoutY="129.0" startX="-13.333333969116211" startY="-1.52587890625E-5" stroke="#f7ef00" strokeWidth="2.0" />
+                        <Line endX="-11.000019073486328" endY="22.999969482421875" layoutX="47.0" layoutY="139.0" startX="-22.00008201599121" startY="23.0" stroke="#f7ef00" strokeWidth="2.0" />
+                        <Line endX="-1.9073486328125E-5" endY="-1.52587890625E-5" layoutX="37.0" layoutY="195.0" startX="-13.333333969116211" startY="-1.52587890625E-5" stroke="#f7ef00" strokeWidth="2.0" />
+                     </children>
+                  </Pane>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="223.0" prefWidth="290.0" styleClass="userpaymodule" stylesheets="@application.css" StackPane.alignment="BOTTOM_RIGHT">
+                     <children>
+                        <Label fx:id="myLabel1112" layoutX="93.0" layoutY="-1.0" prefHeight="42.0" prefWidth="99.0" text="Pay Bill" textFill="#333333">
+                           <font>
+                              <Font name="Consolas Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="upblab1" layoutX="10.0" layoutY="52.0" prefHeight="30.0" prefWidth="139.0" text="label1" textFill="#222221">
+                           <font>
+                              <Font name="Consolas Bold Italic" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="umeterlab" layoutX="10.0" layoutY="101.0" prefHeight="30.0" prefWidth="139.0" text="label3" textFill="#222221">
+                           <font>
+                              <Font name="Consolas Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ubilllab" layoutX="10.0" layoutY="134.0" prefHeight="30.0" prefWidth="139.0" text="label4" textFill="#222221">
+                           <font>
+                              <Font name="Consolas Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Line endX="1123.400146484375" endY="191.3333282470703" layoutX="-833.0" layoutY="-156.0" startX="831.6666259765625" startY="191.3333282470703" stroke="#1b1a1a" strokeWidth="3.0" />
+                        <Label fx:id="umeterval" layoutX="167.0" layoutY="96.0" prefHeight="42.0" prefWidth="120.0" text="Value 3" textFill="#191918">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ubillval" layoutX="167.0" layoutY="130.0" prefHeight="42.0" prefWidth="99.0" text="Value 4" textFill="#191918">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="paybill" layoutX="10.0" layoutY="172.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="265.0" styleClass="pay" stylesheets="@application.css" text="Pay" textFill="#f7ef00">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </Button>
+                        <Pane layoutX="152.0" layoutY="46.0" prefHeight="41.0" prefWidth="130.0" styleClass="amountbar" stylesheets="@application.css">
+                           <children>
+                              <Label fx:id="upbval" layoutX="16.0" prefHeight="42.0" prefWidth="99.0" text="Value 1" textFill="#f7ef00">
+                                 <font>
+                                    <Font name="Consolas" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                     <StackPane.margin>
+                        <Insets right="40.0" />
+                     </StackPane.margin>
+                  </Pane>
+               </children>
+            </StackPane>
+            <Label fx:id="subtitleuser" prefHeight="42.0" prefWidth="359.0" text="User DashBoard" textFill="#f7ef00" StackPane.alignment="TOP_LEFT">
+               <font>
+                  <Font name="Consolas Bold Italic" size="35.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets left="40.0" top="15.0" />
+               </StackPane.margin>
+            </Label>
+         </children>
+      </StackPane>
+      <Button fx:id="switchbut" mnemonicParsing="false" prefHeight="63.0" prefWidth="186.0" styleClass="switchbutton" stylesheets="@application.css" text="Switch Mode" StackPane.alignment="TOP_RIGHT">
+         <StackPane.margin>
+            <Insets right="140.0" />
+         </StackPane.margin>
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="loginicon" fitHeight="46.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_RIGHT">
+         <image>
+            <Image url="@add-user.png" />
+         </image>
+         <StackPane.margin>
+            <Insets right="55.0" top="10.0" />
+         </StackPane.margin>
+      </ImageView>
+      <Pane fx:id="loginback" prefHeight="200.0" prefWidth="200.0" styleClass="blur" stylesheets="@application.css" visible="false">
+         <children>
+            <Pane layoutX="356.0" layoutY="199.0" prefHeight="288.0" prefWidth="519.0" styleClass="login" stylesheets="@application.css">
+               <children>
+                  <Text layoutX="167.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login" wrappingWidth="186.0">
+                     <font>
+                        <Font name="Consolas Bold Italic" size="32.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="exitlogin" layoutX="117.0" layoutY="209.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="120.0" styleClass="cbutton" stylesheets="@application.css" text="Exit" textFill="#f7ef00" />
+                  <Button fx:id="enterlogin" layoutX="278.0" layoutY="209.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="120.0" styleClass="cbutton" stylesheets="@application.css" text="Enter" textFill="#f7ef00" />
+                  <Text layoutX="56.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name:" wrappingWidth="204.39996337890625">
+                     <font>
+                        <Font name="Consolas" size="22.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="58.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Id:" wrappingWidth="217.9999999999999">
+                     <font>
+                        <Font name="Consolas" size="22.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="username" layoutX="266.0" layoutY="98.0" />
+                  <TextField fx:id="userid" layoutX="266.0" layoutY="141.0" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</StackPane>
