@@ -42,6 +42,7 @@ The project combines powerful OracleSQL database capabilities with a versatile J
 
 3. **Frontend Setup:**
    - Integrate FXML and CSS files with the backend code.
+   - Ideally, use JavaFX Scenebuilder to run and edit the UI.
    - Run the application to verify the UI functionality.
 
 ## Database Schema
@@ -67,14 +68,23 @@ The project combines powerful OracleSQL database capabilities with a versatile J
 
 ## Sample Records
 The database includes pre-populated sample records for demonstration purposes.
+![image](https://github.com/user-attachments/assets/4d856833-9fa2-495a-b8b3-42971a1e94ac)
+
 
 ## Features Demonstration
 ### Registered Users
+![image](https://github.com/user-attachments/assets/4b3d58da-c6ca-4226-bbea-acbb3a0f687d)
+![image](https://github.com/user-attachments/assets/c33afd19-0f43-448c-8b96-62a4e4fe5c23)
+
 - View energy consumption details.
 - Access billing history and due dates.
 - Submit and track complaints.
+  ![image](https://github.com/user-attachments/assets/31050de7-7a83-43c8-92e8-a38e773a1056)
+
 
 ### Administrators
+![image](https://github.com/user-attachments/assets/f04052cf-0196-44e5-94b1-f5088055011b)
+
 - Monitor real-time energy usage.
 - Control power distribution and supply.
 - Manage maintenance schedules and technician assignments.
@@ -89,11 +99,10 @@ Contributions are welcome! Please follow these steps:
 3. Commit your changes with descriptive messages.
 4. Submit a pull request for review.
 
-## Contact
-For any queries or support, please contact:
-- **Project Lead:** [Your Name]  
-- **Email:** [Your Email]  
-- **GitHub:** [Your GitHub Profile]
+## Contributors
+- **Sriram B. Swami**  
+- **A.O. Navin Kumar**  
+- **Meghna Varma**
 
 ---
 Thank you for exploring the Integrated Power Grid Management System (IPGMS). Together, let's build smarter, more sustainable energy solutions!
