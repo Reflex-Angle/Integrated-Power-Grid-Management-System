@@ -1,0 +1,98 @@
+insert into PowerPlant values(33, 'Triple', 'PPName1', 44, 'Erode', '9876543210');
+insert into PowerPlant values(34, 'double', 'PPName2', 44, 'Alwarpet', '9898989898');
+insert into PowerPlant values(45, 'double', 'ABCPPName3', 44, 'Mylapore', '9988776655');
+insert into PowerPlant values(46, 'Triple', 'PPName4', 50, 'Chennai', '9123456789');
+insert into PowerPlant values(47, 'Single', 'PPName5', 30, 'Coimbatore', '9234567890');
+insert into PowerPlant values(48, 'Double', 'PPName6', 60, 'Madurai', '9345678901');
+insert into PowerPlant values(49, 'Triple', 'PPName7', 70, 'Salem', '9456789012');
+insert into PowerPlant values(50, 'Single', 'PPName8', 40, 'Tiruppur', '9567890123');
+insert into PowerPlant values(51, 'Double', 'PPName9', 55, 'Trichy', '9678901234');
+insert into PowerPlant values(52, 'Triple', 'PPName10', 80, 'Kanchipuram', '9789012345');
+
+insert into Substation values(101, 33, 'Substation1', 100, 'Erode', '9123456789', 220);
+insert into Substation values(102, 34, 'Substation2', 150, 'Alwarpet', '9234567890', 230);
+insert into Substation values(103, 45, 'Substation3', 120, 'Mylapore', '9345678901', 240);
+insert into Substation values(104, 46, 'Substation4', 200, 'Chennai', '9456789012', 220);
+insert into Substation values(105, 47, 'Substation5', 180, 'Coimbatore', '9567890123', 230);
+insert into Substation values(106, 48, 'Substation6', 170, 'Madurai', '9678901234', 220);
+insert into Substation values(107, 49, 'Substation7', 190, 'Salem', '9789012345', 240);
+insert into Substation values(108, 50, 'Substation8', 160, 'Tiruppur', '9890123456', 220);
+insert into Substation values(109, 51, 'Substation9', 130, 'Trichy', '9876543210', 230);
+insert into Substation values(110, 52, 'Substation10', 140, 'Kanchipuram', '9988776655', 240);
+
+insert into Transformer values(201, 101, 'Step-up', 500, 'Erode', 220, 400);
+insert into Transformer values(202, 102, 'Step-down', 600, 'Alwarpet', 230, 110);
+insert into Transformer values(203, 103, 'Distribution', 400, 'Mylapore', 240, 120);
+insert into Transformer values(204, 104, 'Step-up', 700, 'Chennai', 220, 380);
+insert into Transformer values(205, 105, 'Distribution', 500, 'Coimbatore', 230, 120);
+insert into Transformer values(206, 106, 'Step-down', 450, 'Madurai', 220, 110);
+insert into Transformer values(207, 107, 'Step-up', 800, 'Salem', 240, 400);
+insert into Transformer values(208, 108, 'Step-down', 550, 'Tiruppur', 220, 110);
+insert into Transformer values(209, 109, 'Distribution', 500, 'Trichy', 230, 120);
+insert into Transformer values(210, 110, 'Step-up', 600, 'Kanchipuram', 240, 400);
+
+insert into RegisteredUser values(601, 'Alice Green', '9876543210');
+insert into RegisteredUser values(602, 'Bob Miller', '8765432109');
+insert into RegisteredUser values(603, 'Charlie Davis', '7654321098');
+insert into RegisteredUser values(604, 'Diana Clark', '6543210987');
+insert into RegisteredUser values(605, 'Ethan Lewis', '5432109876');
+insert into RegisteredUser values(606, 'Fiona Adams', '4321098765');
+insert into RegisteredUser values(607, 'George King', '3210987654');
+insert into RegisteredUser values(608, 'Hannah Young', '2109876543');
+insert into RegisteredUser values(609, 'Ivy Scott', '1098765432');
+insert into RegisteredUser values(610, 'Jack Taylor', '0987654321');
+
+insert into Technician values(401, 'John Doe', 'Lead Technician');
+insert into Technician values(402, 'Jane Smith', 'Senior Engineer');
+insert into Technician values(403, 'Mike Johnson', 'Technician');
+insert into Technician values(404, 'Emily Davis', 'Field Engineer');
+insert into Technician values(405, 'Robert Brown', 'Supervisor');
+insert into Technician values(406, 'Alice Wilson', 'Technician');
+insert into Technician values(407, 'David Lee', 'Engineer');
+insert into Technician values(408, 'Chris Harris', 'Field Technician');
+insert into Technician values(409, 'Sarah White', 'Electrical Engineer');
+insert into Technician values(410, 'James Clark', 'Lead Engineer');
+
+insert into MaintenanceLog values(301, 201, 'Replaced faulty wiring', 'Short circuit', 401);
+insert into MaintenanceLog values(302, 202, 'Oil level check and refill', 'Low oil level', 402);
+insert into MaintenanceLog values(303, 203, 'Transformer overheating issue', 'Overheating', 403);
+insert into MaintenanceLog values(304, 204, 'Insulation test', 'Insulation failure', 404);
+insert into MaintenanceLog values(305, 205, 'Routine inspection', 'General maintenance', 405);
+insert into MaintenanceLog values(306, 206, 'Replaced transformer coil', 'Coil burnout', 406);
+insert into MaintenanceLog values(307, 207, 'Check and tighten connections', 'Loose connections', 407);
+insert into MaintenanceLog values(308, 208, 'Replaced fuses', 'Fuse blown', 408);
+insert into MaintenanceLog values(309, 209, 'Check for noise', 'Unusual noise', 409);
+insert into MaintenanceLog values(310, 210, 'Replaced cooling system', 'Cooling failure', 410);
+
+insert into UsageMeter values(701, 601, 'Residential', 150.50, TO_DATE('2023-08-15', 'YYYY-MM-DD'));
+insert into UsageMeter values(702, 602, 'Commercial', 200.75, TO_DATE('2023-08-20', 'YYYY-MM-DD'));
+insert into UsageMeter values(703, 603, 'Industrial', 300.20, TO_DATE('2023-09-01', 'YYYY-MM-DD'));
+insert into UsageMeter values(704, 604, 'Residential', 100.00, TO_DATE('2023-09-05', 'YYYY-MM-DD'));
+insert into UsageMeter values(705, 605, 'Commercial', 180.30, TO_DATE('2023-09-10', 'YYYY-MM-DD'));
+insert into UsageMeter values(706, 606, 'Residential', 120.45, TO_DATE('2023-09-12', 'YYYY-MM-DD'));
+insert into UsageMeter values(707, 607, 'Commercial', 250.60, TO_DATE('2023-09-15', 'YYYY-MM-DD'));
+insert into UsageMeter values(708, 608, 'Industrial', 400.85, TO_DATE('2023-09-18', 'YYYY-MM-DD'));
+insert into UsageMeter values(709, 609, 'Residential', 170.25, TO_DATE('2023-09-20', 'YYYY-MM-DD'));
+insert into UsageMeter values(710, 610, 'Commercial', 220.40, TO_DATE('2023-09-25', 'YYYY-MM-DD'));
+
+insert into Billing values(501, 601, TO_TIMESTAMP('2023-08-15 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), 1000, 701);
+insert into Billing values(502, 602, TO_TIMESTAMP('2023-08-20 12:15:00', 'YYYY-MM-DD HH24:MI:SS'), 1200, 702);
+insert into Billing values(503, 603, TO_TIMESTAMP('2023-09-01 08:45:00', 'YYYY-MM-DD HH24:MI:SS'), 1500, 703);
+insert into Billing values(504, 604, TO_TIMESTAMP('2023-09-05 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), 900, 704);
+insert into Billing values(505, 605, TO_TIMESTAMP('2023-09-10 11:30:00', 'YYYY-MM-DD HH24:MI:SS'), 800, 705);
+insert into Billing values(506, 606, TO_TIMESTAMP('2023-09-12 13:45:00', 'YYYY-MM-DD HH24:MI:SS'), 950, 706);
+insert into Billing values(507, 607, TO_TIMESTAMP('2023-09-15 14:20:00', 'YYYY-MM-DD HH24:MI:SS'), 1100, 707);
+insert into Billing values(508, 608, TO_TIMESTAMP('2023-09-18 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), 1300, 708);
+insert into Billing values(509, 609, TO_TIMESTAMP('2023-09-20 17:10:00', 'YYYY-MM-DD HH24:MI:SS'), 1400, 709);
+insert into Billing values(510, 610, TO_TIMESTAMP('2023-09-25 18:25:00', 'YYYY-MM-DD HH24:MI:SS'), 1250, 710);
+
+insert into ComplaintTicket values(801, 601, 'Power outage in the area', TO_TIMESTAMP('2023-08-15 11:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+insert into ComplaintTicket values(802, 602, 'Frequent voltage fluctuations', TO_TIMESTAMP('2023-08-20 12:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+insert into ComplaintTicket values(803, 603, 'Meter malfunction', TO_TIMESTAMP('2023-09-01 08:30:00', 'YYYY-MM-DD HH24:MI:SS'));
+insert into ComplaintTicket values(804, 604, 'High electricity bill', TO_TIMESTAMP('2023-09-05 09:15:00', 'YYYY-MM-DD HH24:MI:SS'));
+insert into ComplaintTicket values(805, 605, 'Loose connection in the main line', TO_TIMESTAMP('2023-09-10 10:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+insert into ComplaintTicket values(806, 606, 'Power failure in the house', TO_TIMESTAMP('2023-09-12 13:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+insert into ComplaintTicket values(807, 607, 'Overcharging on the bill', TO_TIMESTAMP('2023-09-15 14:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+insert into ComplaintTicket values(808, 608, 'Damaged meter box', TO_TIMESTAMP('2023-09-18 15:30:00', 'YYYY-MM-DD HH24:MI:SS'));
+insert into ComplaintTicket values(809, 609, 'Voltage drops frequently', TO_TIMESTAMP('2023-09-20 16:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+insert into ComplaintTicket values(810, 610, 'Wiring issues', TO_TIMESTAMP('2023-09-25 17:30:00', 'YYYY-MM-DD HH24:MI:SS'));
