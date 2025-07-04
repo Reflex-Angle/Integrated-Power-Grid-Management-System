@@ -101,8 +101,8 @@ Contributions are welcome! Please follow these steps:
 
 ## Contributors
 - **Sriram B. Swami**  
-- **A.O. Navin Kumar**  
 - **Meghna Varma**
+- **A.O. Navin Kumar**  
 
 ---
 Thank you for exploring the Integrated Power Grid Management System (IPGMS). Together, let's build smarter, more sustainable energy solutions!
